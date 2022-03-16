@@ -9,8 +9,14 @@
     <section class = "container" >
         <!-- Stylistically I would like the code in the main flex box to have two elements that are side by side. This is the code for the left element -->
        <div class = "left-side">    
-           <!-- Image for the cover photo -->
-           <img id = "profile-pic" src = "images/Cover.jpg" alt = "CV cover image" >
+           <!-- Image for the cover photo. The picture element is used to adjust the size of the cover photo depending
+                on screen size  -->
+            <picture>
+                <source media = "(max-width: 650px)" srcset = "images/cover-small.jpg">
+                <source media ="max-width: 1400px" srcset = "images/cover=med.jpg">
+                <img id = "profile-pic" src = "images/cover.jpg" alt = "cv cover image" >
+            </picture>
+           
            <!-- This code is for my personal information. It is made up of the heading followed by two list elements which contain both my address and cellphone number. 
              Each list element has an image as well that are icons for aesthetic-->
            <h2>Personal Information</h2>
@@ -59,10 +65,10 @@
             <ul class = "lists">
                 <li>
                  <a href = "https://www.linkedin.com/in/mpumelelo-zondo-643785138/" target = "_blank"> 
-                    <img class ="icons" src = "images/Linkedin.jpg" alt = "mpumi linkedin"> 
+                    <img class ="icons" src = "images/linkedin.jpg" alt = "mpumi linkedin"> 
                 </a>
                <a href = "https://www.facebook.com/mpumi.zondo.3" target = "_blank"> 
-                   <img class = "icons" src = "images/Facebook.jpg" alt = "mpumi facebook">
+                   <img class = "icons" src = "images/facebook.jpg" alt = "mpumi facebook">
                </a>
                <a href = "mailto: mpumizondo97@gmail.com" target = "_blank">
                    <img class = "icons" src = "images/gmail.png"   alt = "mpumi email">
